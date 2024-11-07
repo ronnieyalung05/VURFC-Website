@@ -21,13 +21,15 @@ Use descriptive names in kebab-case that briefly describe the feature or fix:
 
 Follow these conventions for commit messages:
 
-feat: - New features or pages
-fix: - Bug fixes
-docs: - Documentation changes
-style: - Code style changes
-refactor: - Code refactoring
-test: - Adding tests
-chore: - Maintenance tasks
+| Commit prefix | Description           |
+| :------------ | :-------------------- |
+| `feat:`       | New features or pages |
+| `fix:`        | Bug fixes             |
+| `docs:`       | Documentation changes |
+| `style:`      | Code style changes    |
+| `refactor:`   | Code refactoring      |
+| `test:`       | Adding tests          |
+| `chore:`      | Maintenance tasks     |
 
 ## Example Workflow:
 
