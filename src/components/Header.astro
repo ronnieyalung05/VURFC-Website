@@ -1,0 +1,93 @@
+---
+
+---
+
+<header>
+  <nav>
+    <a id="logo-link" href="/">
+      <img src="/images/vurfc-logo.png" alt="Logo" />
+    </a>
+    <div class="links">
+      <a href="/">Home</a>
+      <a href="/roster">Roster</a>
+      <a href="/schedule">Schedule</a>
+    </div>
+    <a
+      id="instagram"
+      href="https://www.instagram.com/vandyrugby/"
+      target="_blank"
+    >
+      <i class="fab fa-instagram"></i>
+    </a>
+  </nav>
+</header>
+
+<style>
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--background);
+    height: 100px;
+  }
+
+  #logo-link {
+    margin-left: 80px;
+    width: 85px;
+    height: 85px;
+  }
+
+  img {
+    width: 85px;
+    height: 85px;
+  }
+
+  .links {
+    margin-inline: auto;
+  }
+
+  .links a {
+    margin: 40px;
+  }
+
+  #instagram {
+    width: 35px;
+    height: 35px;
+    margin-right: 80px;
+  }
+
+  i {
+    font-size: 2.188rem;
+    color: var(--color-secondary);
+  }
+
+  i:hover {
+    color: var(--color-accent);
+  }
+
+  /* Media Queries for Responsive Design */
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: row;
+      height: auto;
+    }
+
+    #instagram {
+      margin-top: 0.5rem;
+    }
+  }
+
+  @media (max-width: 430px) {
+    #logo {
+      height: 40px;
+    }
+
+    .links a {
+      font-size: 0.875rem;
+    }
+
+    #instagram {
+      font-size: 0.5rem;
+    }
+  }
+</style>

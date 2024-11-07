@@ -54,7 +54,7 @@ Follow these conventions for commit messages:
 | :------------------------------------------------- | :-------------------------------------------------- |
 | `npm run dev`                                      | Start local development server to preview changes   |
 | `git add .`                                        | Stage all modified and new files for commit         |
-| `git commit -m "message her"`                      | Save your changes with a descriptive commit message |
+| `git commit -m "message here"`                     | Save your changes with a descriptive commit message |
 | `git push --set-upstream origin your-feature-name` | Push new branch to remote (first time only)         |
 | `git push`                                         | Push new commits to your remote branch              |
 
