@@ -11,7 +11,25 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## How to Add New Pages & Features
+## Development Workflow
+
+# Branch Names
+
+Use descriptive names in kebab-case that briefly describe the feature or fix:
+
+# Commit Message Guidelines
+
+Follow these conventions for commit messages:
+
+feat: - New features or pages
+fix: - Bug fixes
+docs: - Documentation changes
+style: - Code style changes
+refactor: - Code refactoring
+test: - Adding tests
+chore: - Maintenance tasks
+
+# Example Workflow:
 
 Prepare your branch:
 
@@ -30,18 +48,6 @@ Make your changes:
 | `git commit -m "feat: describe your changes"`      | Commit with a descriptive message |
 | `git push --set-upstream origin your-feature-name` | First time pushing the branch     |
 | `git push`                                         | Subsequent pushes                 |
-
-# Commit Message Guidelines
-
-Follow these conventions for commit messages:
-
-feat: - New features or pages
-fix: - Bug fixes
-docs: - Documentation changes
-style: - Code style changes
-refactor: - Code refactoring
-test: - Adding tests
-chore: - Maintenance tasks
 
 ## 👀 Want to learn more about Astro?
 
