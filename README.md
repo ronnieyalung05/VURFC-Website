@@ -1,4 +1,4 @@
-## 🧞 Commands
+# 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
 
@@ -11,13 +11,13 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## Development Workflow
+# Development Workflow
 
-# Branch Names
+## Branch Names
 
 Use descriptive names in kebab-case that briefly describe the feature or fix:
 
-# Commit Message Guidelines
+## Commit Message Guidelines
 
 Follow these conventions for commit messages:
 
@@ -29,7 +29,7 @@ refactor: - Code refactoring
 test: - Adding tests
 chore: - Maintenance tasks
 
-# Example Workflow:
+## Example Workflow:
 
 Prepare your branch:
 
