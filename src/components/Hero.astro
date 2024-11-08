@@ -1,0 +1,49 @@
+<div id="hero-container">
+  <img id="hero-image" src="/images/hero-image.jpg" alt="Hero image" />
+  <img id="hero-logo" src="/images/vurfc-logo.png" alt="Hero logo" />
+  <div id="hero-content">
+    <h1>REGISTRATION OPEN NOW</h1>
+  </div>
+</div>
+<style>
+  #hero-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  #hero-image {
+    width: 100%;
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.3),
+        rgba(255, 255, 255, 0.3)
+      ),
+      url(IMG_7265.jpg);
+    opacity: 0.3;
+    filter: blur(1.5px);
+  }
+
+  #hero-logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    z-index: 2; /* Ensure the logo is above the hero image */
+  }
+
+  #hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 3; /* Ensure the content is above the hero image and logo */
+  }
+
+  #hero-content h1 {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+</style>
