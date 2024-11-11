@@ -1,49 +1,50 @@
 <div id="hero-container">
-  <img id="hero-image" src="/images/hero-image.jpg" alt="Hero image" />
   <img id="hero-logo" src="/images/vurfc-logo.png" alt="Hero logo" />
   <div id="hero-content">
-    <h1>REGISTRATION OPEN NOW</h1>
+    <h1>2024 FALL 15'S RUGBY SEASON</h1>
+    <button>REGISTER NOW</button>
   </div>
 </div>
 <style>
   #hero-container {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    padding-block: 200px;
+  }
+
+  #hero-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden;
-  }
-  #hero-image {
-    width: 100%;
-    background: linear-gradient(
-        0deg,
-        rgba(255, 255, 255, 0.3),
-        rgba(255, 255, 255, 0.3)
-      ),
-      url(IMG_7265.jpg);
-    opacity: 0.3;
-    filter: blur(1.5px);
+    background-image: url(/images/hero-image.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: blur(2px); /* Apply blur effect */
+    z-index: 1;
   }
 
-  #hero-logo {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    width: 100px;
-    z-index: 2; /* Ensure the logo is above the hero image */
-  }
-
+  #hero-logo,
   #hero-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    z-index: 3; /* Ensure the content is above the hero image and logo */
+    position: relative;
+    z-index: 2;
   }
-
+  #hero-logo {
+    width: 100px;
+  }
+  #hero-content {
+  }
   #hero-content h1 {
+    color: white;
     font-size: 2.5rem;
     margin: 0;
+    text-transform: uppercase;
   }
 </style>
