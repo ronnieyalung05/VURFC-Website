@@ -4,91 +4,75 @@
 
 <header>
   <nav>
-    <a id="logo-link" href="/">
-      <img src="/images/vurfc-logo.png" alt="Logo" />
-    </a>
-    <div class="links">
-      <a href="/">Home</a>
-      <a href="/roster">Roster</a>
-      <a href="/schedule">Schedule</a>
-    </div>
-    <a
-      id="instagram"
-      href="https://www.instagram.com/vandyrugby/"
-      target="_blank"
-    >
-      <i class="fab fa-instagram"></i>
-    </a>
+    <ul class="nav__list">
+      <li class="nav__list-item">
+        <a href="/" class="nav__link">Home</a>
+      </li>
+      <li class="nav__list-item">
+        <a href="/roster" class="nav__link">Roster</a>
+      </li>
+      <li class="nav__list-item">
+        <a href="/schedule" class="nav__link">Schedule</a>
+      </li>
+      <li class="nav__list-item nav__item-instagram">
+        <a
+          class="nav__link nav__link-instagram"
+          href="https://www.instagram.com/vandyrugby/"
+          target="_blank"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+      </li>
+    </ul>
   </nav>
 </header>
 
 <style>
-  nav {
+  header {
+    background-color: var(--clr-black);
+    padding: 1em;
+    text-align: center;
+  }
+  .nav__logo-link {
+    display: block;
+    margin: 0 auto;
+    width: 85px;
+    height: 85px;
+  }
+
+  .nav__logo {
+    width: 85px;
+  }
+
+  .nav__list {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: var(--background);
-    height: 100px;
-    /* z-index: 1; */
+    justify-content: space-between;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 0.5em 0;
+    text-transform: uppercase;
+    font-size: var(--fs-400);
+    font-weight: var(--fw-bold);
+    letter-spacing: 1px;
   }
 
-  #logo-link {
-    margin-left: 80px;
-    width: 85px;
-    height: 85px;
+  .nav__link {
+    text-decoration: none;
+    color: inherit;
   }
 
-  img {
-    width: 85px;
-    height: 85px;
+  .nav__link-instagram {
+    margin: 0;
+    /* width: 1.625rem;
+    height: 1.625rem; */
   }
 
-  .links {
-    margin-inline: auto;
+  .nav__item-instagram {
+    height: 23.75px;
   }
 
-  .links a {
-    margin: 40px;
-  }
-
-  #instagram {
-    width: 35px;
-    height: 35px;
-    margin-right: 80px;
-  }
-
-  i {
-    font-size: 2.188rem;
-    color: var(--color-secondary);
-  }
-
-  i:hover {
-    color: var(--color-accent);
-  }
-
-  /* Media Queries for Responsive Design */
-  @media (max-width: 768px) {
-    nav {
-      flex-direction: row;
-      height: auto;
-    }
-
-    #instagram {
-      margin-top: 0.5rem;
-    }
-  }
-
-  @media (max-width: 430px) {
-    #logo {
-      height: 40px;
-    }
-
-    .links a {
-      font-size: 0.875rem;
-    }
-
-    #instagram {
-      font-size: 0.5rem;
-    }
+  .fab {
+    font-size: var(--fs-600);
   }
 </style>
