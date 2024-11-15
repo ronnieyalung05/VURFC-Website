@@ -40,13 +40,8 @@
     height: 85px;
   }
 
-  .nav__logo {
-    width: 85px;
-  }
-
   .nav__list {
     display: flex;
-    justify-content: space-between;
     list-style: none;
     width: 100%;
     padding: 0;
@@ -57,6 +52,10 @@
     letter-spacing: 1px;
   }
 
+  .nav__list li {
+    margin-inline: auto;
+  }
+
   .nav__link {
     text-decoration: none;
     color: inherit;
@@ -64,8 +63,6 @@
 
   .nav__link-instagram {
     margin: 0;
-    /* width: 1.625rem;
-    height: 1.625rem; */
   }
 
   .nav__item-instagram {
@@ -74,5 +71,6 @@
 
   .fab {
     font-size: var(--fs-600);
+    color: var(--clr-gold);
   }
 </style>
