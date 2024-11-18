@@ -29,15 +29,13 @@
 
 <style>
   header {
-    background-color: var(--clr-black);
-    padding: 1em;
-    text-align: center;
-  }
-  .nav__logo-link {
-    display: block;
-    margin: 0 auto;
-    width: 85px;
-    height: 85px;
+    position: absolute;
+    z-index: 3;
+    padding: 0;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
   }
 
   .nav__list {
@@ -45,14 +43,17 @@
     list-style: none;
     width: 100%;
     padding: 0;
-    margin: 0.5em 0;
     text-transform: uppercase;
     font-size: var(--fs-400);
     letter-spacing: 1px;
   }
 
-  .nav__list li {
+  .nav__list-item {
     margin-inline: auto;
+  }
+
+  .nav__list li:first-of-type {
+    margin-left: 2rem;
   }
 
   .nav__link {
@@ -66,10 +67,12 @@
 
   .nav__item-instagram {
     height: 23.75px;
+    margin-right: 2rem;
   }
 
   .fab {
     font-size: var(--fs-600);
+    color: var(--clr-gold);
     color: var(--clr-gold);
   }
 </style>
