@@ -3,7 +3,7 @@
   --clr-white: white;
   --clr-gold: #cead66;
 
-  --fhder: "Montserrat", sans-serif;
+  --fhdr: "Montserrat", sans-serif;
   --fbody: "Open Sans", sans-serif;
   --fw-light: 200;
   --fw-normal: 400;
@@ -19,7 +19,7 @@
 h1,
 h2,
 h3 {
-  font-family: var(--fhder);
+  font-family: var(--fhdr);
   font-weight: var(--fw-normal);
   line-height: 1.2;
   color: var(--clr-white);
