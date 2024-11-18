@@ -45,3 +45,11 @@ body {
 .section {
   margin-bottom: 40px;
 }
+
+h1 {
+  font-size: var(--fs-900);
+}
+
+h2 {
+  font-size: var(--fs-700);
+}
