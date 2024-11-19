@@ -13,6 +13,7 @@
     position: relative;
     width: 100%;
     overflow: hidden;
+    min-height: 30rem;
   }
 
   .hero__image::before {
@@ -53,9 +54,15 @@
   .hero__logo {
     position: relative;
     z-index: 3;
-    width: 150px;
+    width: 9.375rem;
     margin: 0;
     margin-top: 3em;
+  }
+
+  @media screen and (min-width: 425px) {
+    .hero__logo {
+      width: 12.5rem;
+    }
   }
 
   .hero__title {
