@@ -32,7 +32,7 @@ const posts = await getInstagramPosts();
   <div class="news__grid">
     {
       posts.length > 0
-        ? posts.slice(0, 4).map((post: InstagramPost) => (
+        ? posts.slice(0, 8).map((post: InstagramPost) => (
             <a
               href={post.permalink}
               target="_blank"
@@ -52,7 +52,7 @@ const posts = await getInstagramPosts();
               )}
             </a>
           ))
-        : Array(4)
+        : Array(8)
             .fill(null)
             .map(() => (
               <div class="news__card news__card--loading">
@@ -82,14 +82,29 @@ const posts = await getInstagramPosts();
     margin-bottom: 1.5rem;
   }
 
+  @media (max-width: 999px) {
+    .news__card:nth-child(n + 5) {
+      display: none;
+    }
+  }
+
+  @media (max-width: 1340px) {
+    .news__card:nth-child(n + 7) {
+      display: none;
+    }
+  }
   .news__card {
     background: var(--clr-gold);
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
+    transition: 0.2s ease;
     text-decoration: none;
     color: inherit;
+  }
+
+  .news__card:hover {
+    transform: scale(1.01);
   }
 
   .news__image {
