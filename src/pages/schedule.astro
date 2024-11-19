@@ -1,7 +1,6 @@
 ---
 import Header from "../components/Header.astro";
-import Hero from "../components/Hero.astro";
-import News from "../components/news/News.astro";
+import ScheduleComponent from "../components/Schedule.astro";
 ---
 
 <html lang="en">
@@ -10,7 +9,7 @@ import News from "../components/news/News.astro";
     <link rel="icon" type="image/svg+xml" href="/images/vurfc-logo.png" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
+    <title>VURFC</title>
     <link rel="stylesheet" href="/src/styles/index.css" />
     <link
       rel="stylesheet"
@@ -24,8 +23,7 @@ import News from "../components/news/News.astro";
   <body>
     <Header />
     <main>
-      <Hero />
-      <News />
+      <ScheduleComponent />
     </main>
     <footer></footer>
   </body>
